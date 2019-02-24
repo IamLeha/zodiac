@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Document</title>
+
+
+
+    <link href="css/datedropper.css" rel="stylesheet" />
+
+    <link href="css/my-style.css" rel="stylesheet" />
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/datedropper.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <video class="form__video" preload="auto" autoplay="autoplay" loop="loop">
+            <source src="video/Animation Of Stars.mp4" type="video/mp4">
+            </source>
+            <source src="video/Animation Of Stars.webm" type="video/webm">
+            </source>
+        </video>
+        <main>
+            <div class="main-container">
+                <div class="top-container animated fadeInLeft">
+                    <h1>DAILY HOROSCOPE</h1>
+                    <p>Благодаря этому сайту очень просто получить гороскоп по дате рождения.</p>
+                </div>
+
+
+                        
+                <form action="" class="form-container animated fadeInRight">
+                    <div class="form-container__date">
+                        <input type="date" id="date-input" placeholder="Выберите дату рождения" data-large-mode="true" data-large-default="true" data-lang="ru"
+                            data-format="Y-m-d" data-init-set="false"  data-translate-mode="true" data-theme="my-style" data-lock="to" />
+
+                    </div>
+                    <div class="form-container__box">
+
+                        <input type="radio" name="radio" id="r1">
+                        <label for="r1" class="form-container__box-radio" id="l1">
+                            <p>Сегодня</p>
+                        </label>
+
+
+                        <input type="radio" name="radio" id="r2">
+                        <label for="r2" class="form-container__box-radio" id="l2">
+                            <p>Завтра</p>
+                        </label>
+
+
+                        <input type="radio" name="radio" id="r3">
+                        <label for="r3" class="form-container__box-radio" id="l3">
+                            <p>Послезавтра</p>
+                        </label>
+
+
+                        <div class="form-container__box-btn">
+                            <input type="button" value="search" id="test">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="bottom-container animated fadeInLeft">
+                    <div class="bottom-container__img">
+                        <img src="img/libra_PNG19.png" alt="">
+                    </div>
+
+                    <div class="bottom_container__txt">
+                        <h2>Весы</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto amet totam vero beatae ut odio cum porro accusantium laudantium</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+
+    <script>
+        $('#date-input').dateDropper();
+    </script>
+</body>
+
+</html>
